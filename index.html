@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio | 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .navy-bg { background-color: #0F172A; } /* Navy Blue */
+        .navy-text { color: #0F172A; }
+    </style>
+</head>
+<body class="bg-white text-slate-900 leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white/80 backdrop-blur-md border-b border-slate-100 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
+            <span class="text-lg font-bold tracking-tight navy-text">WICHAYA<span class="text-blue-600">.</span>WICHIENCHAI</span>
+            <div class="hidden md:flex items-center gap-3 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-600 transition">Home</a>
+                <span class="text-slate-300">|</span>
+                <a href="#experience" class="hover:text-blue-600 transition">Experiences</a>
+                <span class="text-slate-300">|</span>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <span class="text-slate-300">|</span>
+                <a href="#about-me" class="hover:text-blue-600 transition">About Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-24 md:py-32">
+        <div class="max-w-3xl">
+            <h2 class="text-sm font-bold tracking-widest text-blue-600 uppercase mb-4">Analytics Engineer & Data Analyst</h2>
+            <h1 class="text-5xl md:text-6xl font-extrabold navy-text mb-8 tracking-tight">
+                Crafting data stories with <span class="text-slate-400">precision.</span>
+            </h1>
+            <p class="text-xl text-slate-600 mb-10 leading-relaxed">
+                Bridging complex data and business decisions by building scalable 
+                transformation pipelines and automated reporting systems.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                <span class="px-4 py-2 bg-white shadow-sm border rounded-full text-sm">Python</span>
+                <span class="px-4 py-2 bg-white shadow-sm border rounded-full text-sm">SQL</span>
+                <span class="px-4 py-2 bg-white shadow-sm border rounded-full text-sm">Looker / Tableau</span>
+                <span class="px-4 py-2 bg-white shadow-sm border rounded-full text-sm">ETL</span>
+                <span class="px-4 py-2 bg-white shadow-sm border rounded-full text-sm">GCP</span>
+            </div>
+            <div class="flex flex-wrap gap-4 mt-6">
+                <!-- ปุ่มหลัก: ดูโปรเจกต์ -->
+                <!-- <a href="#projects" class="px-6 py-3 border-2 border-slate-900 font-semibold hover:bg-slate-900 hover:text-white transition rounded-lg">
+                    View Projects
+                </a> -->
+                
+                <!-- ปุ่ม Download Resume -->
+                <a href="./attached/resume_20260503.pdf"
+                    download="resume_wichaya-wichienchai.pdf" 
+                    class="inline-flex items-center gap-2 px-6 py-3 navy-bg text-white font-semibold rounded-lg hover:bg-slate-800 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 16V4m0 12l-4-4m4 4l4-4M4 20h16"/>
+                    </svg>
+                    <span>Download Resume</span>
+                </a>            
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skill" class="bg-slate-50 py-20">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+            <div>
+                <h4 class="font-bold navy-text mb-2">Core Technical Skills</h4>
+                <p class="text-slate-500 text-sm">Python (Pandas, NumPy, Seaborn, SciPy, 
+                    Scikitlearn, DuckDB), SQL (Oracle, MS SQL, MySQL), Apache Spark, Airflow.</p>
+            </div>
+            <div>
+                <h4 class="font-bold navy-text mb-2">Tools</h4>
+                <p class="text-slate-500 text-sm">Advanced BI Tools (Looker, Tableau, Power BI), Rapid Miner
+                    , BigQuery, Google Analytics, Google Tag Manager, AppsFlyer Analytics.</p>                
+            </div>
+            <div class="pl-6">
+                <h4 class="font-bold navy-text mb-2">Languages</h4>
+                    <li><p class="text-slate-500 text-sm">English</p></li>
+                    <li><p class="text-slate-500 text-sm">Thai (Native) </p></li>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Work Experience Section -->
+    <section id = "experience" class="max-w-4xl mx-auto px-6 py-20 border-t border-slate-100">
+        <div class="mb-10">
+            <h3 class="text-3xl font-bold navy-text tracking-tight">Work Experiences</h3>
+            <!-- <p class="text-slate-500 mt-2 text-sm">Click on each role to see more details.</p> -->
+        </div>
+
+        <div class="space-y-4">
+            
+            <!-- Experience Item 1: SME Bank -->
+            <details class="group border border-slate-200 rounded-xl overflow-hidden bg-white hover:border-blue-300 transition-all" open>
+                <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                    <div>
+                        <h4 class="text-xl font-bold navy-text group-open:text-blue-600 transition-colors">Data Analyst / Analytics Engineer</h4>
+                        <p class="text-blue-600 font-semibold text-sm">SME Development Bank of Thailand</p>
+                    </div>
+                    <div class="text-right flex flex-col items-end">
+                        <span class="text-sm font-medium text-slate-400">Jun 2025 — Present</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 group-open:rotate-180 transition-transform mt-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </summary>
+                <div class="px-6 pb-6 pt-2 border-t border-slate-50">
+                    <ul class="text-slate-600 text-sm space-y-3 list-disc ml-4">
+                        <li>Delivered end-to-end analytics solutions covering <strong>data extraction, validation, analysis, dashboarding, and reporting</strong>.</li>
+                        <li>Built <strong>data validation frameworks</strong> to ensure data accuracy, consistency and integrity across multiple systems.</li>
+                        <li>Gathered <strong>business requirements</strong> and delivered reporting solutions for core banking operations.</li>
+                        <li>Supported Bank of Thailand projects (e.g. RDT Credit, TFRS9, etc.), ensuring accurate data mapping across systems.</li>
+                        <li>Developed <strong>automated data pipelines</strong> using Python, DuckDB, and Airflow, reducing manual reporting effort and improving turnaround time.</li>
+                        <li>Optimised SQL queries and data models to support complex financial and regulatory reporting.</li>
+                        <li>Analysed incident and defect data to identify trends, root causes, and recurring operational issues.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <!-- Experience Item 2: JD Central -->
+            <details class="group border border-slate-200 rounded-xl overflow-hidden bg-white hover:border-blue-300 transition-all">
+                <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                    <div>
+                        <h4 class="text-xl font-bold navy-text group-open:text-blue-600 transition-colors">Marketing Analytics Specialist</h4>
+                        <p class="text-slate-500 font-semibold text-sm">Central JD Co. Ltd. (JD CENTRAL)</p>
+                    </div>
+                    <div class="text-right flex flex-col items-end">
+                        <span class="text-sm font-medium text-slate-400">2021 — 2023</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 group-open:rotate-180 transition-transform mt-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </summary>
+                <div class="px-6 pb-6 pt-2 border-t border-slate-50">
+                    <ul class="text-slate-600 text-sm space-y-3 list-disc ml-4">
+                        <li>Analysed marketing and performance data to support business and client decision-making.</li>
+                        <li>Supported customer segmentation, campaign optimisation, cross-selling, and loyalty initiatives.</li>
+                        <li>Built and <strong>automated ETL pipelines</strong> using <strong>Python</strong> and <strong>Jenkins</strong> on <strong>Google Cloud Platform (Cloud SQL)</strong>.</li>
+                        <li>Developed forecasting models for budget and performance planning.</li>
+                        <li>Created KPI dashboards and reports using <strong>Looker Studio</strong>.</li>
+                        <li>Provided analytics and technical data support to stakeholders.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <!-- Experience Item 3: Research Assistant -->
+            <details class="group border border-slate-200 rounded-xl overflow-hidden bg-white hover:border-blue-300 transition-all">
+                <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                    <div>
+                        <h4 class="text-xl font-bold navy-text group-open:text-blue-600 transition-colors">Research Assistant</h4>
+                        <p class="text-slate-500 font-semibold text-sm">Brain-Computer Interface Laboratory</p>
+                    </div>
+                    <div class="text-right flex flex-col items-end">
+                        <span class="text-sm font-medium text-slate-400">2019 — 2021</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 group-open:rotate-180 transition-transform mt-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </summary>
+                <div class="px-6 pb-6 pt-2 border-t border-slate-50">
+                    <ul class="text-slate-600 text-sm space-y-3 list-disc ml-4">
+                        <li>Conducted experiments and validated biological signal data for analytical accuracy.</li>
+                        <li>Developed consumer preference models using EEG and eye-tracking data.</li>
+                        <li>Applied feature extraction and signal processing techniques using <strong>MATLAB</strong>.</li>
+                        <li>Built ECG signal detection and validation frameworks using <strong>Python</strong>.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <!-- Experience Item 4: Android Developer -->
+            <details class="group border border-slate-200 rounded-xl overflow-hidden bg-white hover:border-blue-300 transition-all">
+                <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                    <div>
+                        <h4 class="text-xl font-bold navy-text group-open:text-blue-600 transition-colors">Android Developer</h4>
+                        <p class="text-slate-500 font-semibold text-sm">TA Robotai Co. Ltd.</p>
+                    </div>
+                    <div class="text-right flex flex-col items-end">
+                        <span class="text-sm font-medium text-slate-400">2019</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 group-open:rotate-180 transition-transform mt-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </summary>
+                <div class="px-6 pb-6 pt-2 border-t border-slate-50">
+                    <ul class="text-slate-600 text-sm space-y-3 list-disc ml-4">
+                        <li>Developed Android applications based on user and business requirements.</li>
+                        <li>Designed UX/UI prototypes using <strong>Figma</strong> and implemented front-end features using <strong>Java</strong>.</li>
+                        <li>Managed metadata organization and data dictionaries using <strong>Notion</strong>.</li>
+                        
+                        <!-- <li>Managed the transition from academic research to corporate data projects.</li>
+                        <li>Built internal data dictionaries and catalogs using Notion to organize messy metadata from multiple sources.</li>
+                        <li>Assisted in high-dividend stock analysis and real estate investment modeling.</li> -->
+                    
+                    </ul>
+                </div>
+            </details>
+
+        </div>
+    </section>
+
+    
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-100">
+        
+        <div class="flex justify-between items-end mb-16">
+            <div>
+                <h3 class="text-3xl font-bold navy-text tracking-tight">Selected Projects</h3>
+                <p class="text-slate-500 mt-2">A showcase of data engineering and analysis.</p>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Project 1: Hotel Scraping -->
+            <div class="group bg-slate-50 rounded-3xl p-1 border border-transparent hover:border-blue-200 transition-all duration-500">
+                <div class="bg-white rounded-[1.4rem] p-8 h-full flex flex-col shadow-sm">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="p-3 bg-blue-50 text-blue-600 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                        <a href="https://github.com/wiwich/hotel-scraping" target="_blank" class="text-slate-400 hover:text-navy-text transition-colors">
+                            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                    </div>
+                    <h4 class="text-xl font-bold navy-text mb-3 tracking-tight">Hotel Market Intelligence Scraper</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                        Automated pricing data extraction pipeline for competitive analysis. Capable of handling dynamic web content and structured data transformation.
+                    </p>
+                    <div class="mt-auto flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-[10px] font-bold uppercase tracking-wider">Web Scraping</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-[10px] font-bold uppercase tracking-wider">Data Analysis</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-[10px] font-bold uppercase tracking-wider">Selenium</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: OCR Receipt -->
+            <div class="group bg-slate-50 rounded-3xl p-1 border border-transparent hover:border-emerald-200 transition-all duration-500">
+                <div class="bg-white rounded-[1.4rem] p-8 h-full flex flex-col shadow-sm">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="p-3 bg-emerald-50 text-emerald-600 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </div>
+                        <a href="https://github.com/wiwich/ocr-receipt" target="_blank" class="text-slate-400 hover:text-navy-text transition-colors">
+                            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                    </div>
+                    <h4 class="text-xl font-bold navy-text mb-3 tracking-tight">AI-Powered Receipt OCR</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                        Full-cycle image-to-data extraction system for financial documents. Optimized using OpenCV pre-processing for high accuracy in real-world conditions.
+                    </p>
+                    <div class="mt-auto flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full text-[10px] font-bold uppercase tracking-wider">Computer Vision</span>
+                        <span class="px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full text-[10px] font-bold uppercase tracking-wider">Tesseract</span>
+                        <span class="px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full text-[10px] font-bold uppercase tracking-wider">OpenCV</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project Card 1 
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-2xl bg-slate-100 aspect-video mb-6 border border-slate-200">
+                    ลบข้อความนี้ออกเมื่อใส่รูปจริง <img src="..." /> 
+                    <div class="absolute inset-0 flex items-center justify-center text-slate-400 font-medium group-hover:scale-105 transition duration-500">
+                        Regulatory Data Transformation
+                    </div>
+                </div>
+                <h4 class="text-xl font-bold navy-text mb-2 group-hover:text-blue-600 transition">Banking RDT Project</h4>
+                <p class="text-slate-600 text-sm mb-4">Implementing end-to-end data pipelines for the Bank of Thailand regulatory requirements, focusing on account mapping (AA) and data accuracy.</p>
+                <div class="flex gap-2">
+                    <span class="text-xs font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded">Python</span>
+                    <span class="text-xs font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded">DuckDB</span>
+                </div>
+            </div>-->
+
+            <!-- Project Card 2
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-2xl bg-slate-100 aspect-video mb-6 border border-slate-200">
+                    <div class="absolute inset-0 flex items-center justify-center text-slate-400 font-medium group-hover:scale-105 transition duration-500">
+                        Investment Scoring Model
+                    </div>
+                </div>
+                <h4 class="text-xl font-bold navy-text mb-2 group-hover:text-blue-600 transition">NPA Property Grading</h4>
+                <p class="text-slate-600 text-sm mb-4">Developed a scoring algorithm to rank investment potential for Non-Performing Assets and condo rentals based on high-dividend yields.</p>
+                <div class="flex gap-2">
+                    <span class="text-xs font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded">SQL</span>
+                    <span class="text-xs font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded">Real Estate</span>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- About Me & Education Section -->
+    <section id="about-me" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-100">
+        <div class="grid md:grid-cols-2 gap-16">
+            
+            <!-- ฝั่งซ้าย: Bio & Passion -->
+            <div>
+                <h3 class="text-3xl font-bold navy-text tracking-tight mb-6">About Me</h3>
+                <p class="text-slate-600 leading-relaxed mb-6">
+                    I am a dedicated <strong>Data Professional</strong> with a strong background in the banking and e-commerce sectors. 
+                    My passion lies in transforming messy, complex data into structured assets that drive business value. 
+                    With a transition from academic research to corporate data engineering, I bring a unique analytical 
+                    perspective to every project I undertake.
+                </p>
+                <p class="text-slate-600 leading-relaxed mb-8">
+                    Currently, I am focused on mastering <strong>Analytics Engineering </strong>  and exploring opportunities to apply 
+                    my expertise in international environments.
+                </p>
+                
+                <!-- Contact Info --> 
+                <div class="space-y-4">
+                    <h4 class="font-bold navy-text uppercase text-sm tracking-widest">Connect with me</h4>
+                    <div class="grid grid-cols-1  gap-4">
+                        <a href="mailto:wichaya.wic@gmail.com" class="flex items-center gap-3 p-3 bg-slate-50 rounded-lg hover:bg-blue-50 transition group">
+                            <div class="w-10 h-10 navy-bg text-white rounded-full flex items-center justify-center group-hover:bg-blue-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-bold">Email</p>
+                                <p class="text-sm navy-text font-medium">wichaya.wic@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="http://www.linkedin.com/in/wichaya-wichienchai" class="flex items-center gap-3 p-3 bg-slate-50 rounded-lg hover:bg-blue-50 transition group">
+                            <div class="w-10 h-10 navy-bg text-white rounded-full flex items-center justify-center group-hover:bg-blue-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-bold">LinkedIn</p>
+                                <p class="text-sm navy-text font-medium">linkedin.com/in/wichaya-wichienchai</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ฝั่งขวา: Education -->
+            <div class="bg-slate-50 rounded-3xl p-8 md:p-10 border border-slate-100">
+                <h3 class="text-2xl font-bold navy-text mb-8 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                    </svg>
+                    Education
+                </h3>
+                
+                <div class="space-y-8">
+                    <!-- Degree 1 -->
+                    <div class="relative pl-6 border-l-2 border-slate-200">
+                        <div class="absolute -left-[7px] top-0 w-3 h-3 bg-slate-300 rounded-full"></div>
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">2018 — 2021</p>
+                        <h4 class="text-lg font-bold navy-text leading-tight">Master of Engineering (M.Eng.)</h4>
+                        <p class="text-slate-600 text-sm mt-1">Major in Biomedical Engineering</p>
+                        <p class="text-slate-400 text-xs mt-2 italic">Mahidol University, Thailand</p>
+                    </div>
+
+                    <!-- Bachelor -->
+                    <div class="relative pl-6 border-l-2 border-slate-200">
+                        <div class="absolute -left-[7px] top-0 w-3 h-3 bg-slate-300 rounded-full"></div>
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">2014 - 2017</p>
+                        <h4 class="text-lg font-bold navy-text leading-tight">Bachelor of Science (B.Sc.) </h4>
+                        <p class="text-slate-600 text-sm mt-1">Major in Computer Science</p>
+                        <p class="text-slate-400 text-xs mt-2 italic">Thammasat University, Thailand</p>
+                    </div>
+                </div>
+
+                <!-- Skills Summary Badge (Optional) -->
+                <div class="mt-10 pt-8 border-t border-slate-200">
+                    <p class="text-xs font-bold text-slate-400 uppercase mb-4 tracking-widest">Base Location</p>
+                    <p class="text-sm navy-text flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Bangkok, Thailand (Open to Relocation)
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Licenses & Certifications -->
+    <section id="certificate" class="bg-slate-50 max-w-6xl mx-auto px-6 py-20 border-t border-slate-100">
+        <div class="mb-12">
+            <h3 class="text-3xl font-bold navy-text tracking-tight">Licenses & Certifications</h3>
+            <!-- <p class="text-slate-500 mt-2 text-sm">Validating expertise through industry-recognized credentials.</p> -->
+        </div>
+
+        <!-- Grid System -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Certification 1: Microsoft Azure -->
+            <div class="group bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col">
+                <div class="p-8 pb-6">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-slate-50 rounded-full text-[10px] font-bold text-slate-400 uppercase tracking-widest">Apr 2026</span>
+                    </div>
+                    <h4 class="text-lg font-bold navy-text mb-2 leading-tight h-12 overflow-hidden">Cloud Essential and Cloud Migration</h4>
+                    <p class="text-sm font-semibold text-blue-600 italic">Conicle</p>
+                </div>
+
+                <details class="group/info mt-auto">
+                    <summary class="list-none cursor-pointer px-8 py-4 text-[10px] font-black text-slate-400 uppercase tracking-widest flex items-center justify-between border-t border-slate-50 hover:bg-slate-50 transition-colors">
+                        <span>Credential Details</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-open/info:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    
+                    <div class="px-8 pb-8 pt-4 bg-slate-50/50">
+                        <div class="mb-4">
+                            <p class="text-[10px] font-bold text-slate-400 uppercase mb-2">Skills Gained</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[10px] font-medium text-slate-600">Cloud Strategy</span>
+                                <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[10px] font-medium text-slate-600">Azure Migration</span>
+                            </div>
+                        </div>
+                        <a href="https://conicle.com/verse/ecerverification/CO0040250002C838" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-blue-600 hover:underline">
+                            Verify ID: CO00402...C838
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                        </a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Certification 2: SQL (HackerRank) -->
+            <div class="group bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col">
+                <div class="p-8 pb-6">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-slate-50 rounded-full text-[10px] font-bold text-slate-400 uppercase tracking-widest">Jan 2025</span>
+                    </div>
+                    <h4 class="text-lg font-bold navy-text mb-2 leading-tight h-12">SQL (Intermediate) Certificate</h4>
+                    <p class="text-sm font-semibold text-emerald-600">HackerRank</p>
+                </div>
+
+                <details class="group/info mt-auto">
+                    <summary class="list-none cursor-pointer px-8 py-4 text-[10px] font-black text-slate-400 uppercase tracking-widest flex items-center justify-between border-t border-slate-50 hover:bg-slate-50 transition-colors">
+                        <span>Credential Details</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-open/info:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="px-8 pb-8 pt-4 bg-slate-50/50">
+                        <div class="mb-4">
+                            <p class="text-[10px] font-bold text-slate-400 uppercase mb-2">Technical Proficiency</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[10px] font-medium text-slate-600">Complex Joins</span>
+                                <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[10px] font-medium text-slate-600">Subqueries</span>
+                            </div>
+                        </div>
+                        <a href="https://www.hackerrank.com/certificates/a4103ac6a4e5" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-emerald-600 hover:underline">Verify Result →</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Certification 3: Agile (LinkedIn) -->
+            <div class="group bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col">
+                <div class="p-8 pb-6">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-slate-50 rounded-full text-[10px] font-bold text-slate-400 uppercase tracking-widest">Mar 2026</span>
+                    </div>
+                    <h4 class="text-lg font-bold navy-text mb-2 leading-tight h-12">Agile Requirements Foundations</h4>
+                    <p class="text-sm font-semibold text-indigo-600">LinkedIn Learning</p>
+                </div>
+
+                <details class="group/info mt-auto">
+                    <summary class="list-none cursor-pointer px-8 py-4 text-[10px] font-black text-slate-400 uppercase tracking-widest flex items-center justify-between border-t border-slate-50 hover:bg-slate-50 transition-colors">
+                        <span>Credential Details</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-open/info:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="px-8 pb-8 pt-4 bg-slate-50/50">
+                        <div class="mb-4">
+                            <p class="text-[10px] font-bold text-slate-400 uppercase mb-2">Management Skills</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[10px] font-medium text-slate-600">Scrum</span>
+                                <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[10px] font-medium text-slate-600">User Stories</span>
+                            </div>
+                        </div>
+                        <a href="https://www.linkedin.com/learning/certificates/..." target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-indigo-600 hover:underline">View on LinkedIn →</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Certification 4: Shopee Code League (Participant) -->
+            <div class="group bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col">
+                <div class="p-8 pb-6">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-slate-50 rounded-full text-[10px] font-bold text-slate-400 uppercase tracking-widest">May 2021</span>
+                    </div>
+                    <h4 class="text-lg font-bold navy-text mb-2 leading-tight h-12">Shopee Code League 2021</h4>
+                    <p class="text-sm font-semibold text-orange-600">Shopee (Regional Participant)</p>
+                </div>
+
+                <details class="group/info mt-auto">
+                    <summary class="list-none cursor-pointer px-8 py-4 text-[10px] font-black text-slate-400 uppercase tracking-widest flex items-center justify-between border-t border-slate-50 hover:bg-slate-50 transition-colors">
+                        <span>Credential Details</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-open/info:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="px-8 pb-8 pt-4 bg-slate-50/50">
+                        <div class="mb-4">
+                            <p class="text-[10px] font-bold text-slate-400 uppercase mb-2">Competition Focus</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[10px] font-medium text-slate-600">Competitive Programming</span>
+                                <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[10px] font-medium text-slate-600">Data Analytics</span>
+                            </div>
+                        </div>
+                        <a href="https://www.credly.com/badges/..." target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-orange-600 hover:underline">View Badge on Credly →</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Certification 5: AI For Everyone (Coursera) -->
+            <div class="group bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col">
+                <div class="p-8 pb-6">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-slate-50 rounded-full text-[10px] font-bold text-slate-400 uppercase tracking-widest">Jun 2020</span>
+                    </div>
+                    <h4 class="text-lg font-bold navy-text mb-2 leading-tight h-12">AI For Everyone</h4>
+                    <p class="text-sm font-semibold text-purple-600">Coursera (DeepLearning.AI)</p>
+                </div>
+
+                <details class="group/info mt-auto">
+                    <summary class="list-none cursor-pointer px-8 py-4 text-[10px] font-black text-slate-400 uppercase tracking-widest flex items-center justify-between border-t border-slate-50 hover:bg-slate-50 transition-colors">
+                        <span>Credential Details</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-open/info:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="px-8 pb-8 pt-4 bg-slate-50/50">
+                        <div class="mb-4">
+                            <p class="text-[10px] font-bold text-slate-400 uppercase mb-2">Knowledge Gained</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[10px] font-medium text-slate-600">AI Strategy</span>
+                                <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[10px] font-medium text-slate-600">Machine Learning</span>
+                            </div>
+                        </div>
+                        <a href="https://www.coursera.org/account/accomplishments/..." target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-purple-600 hover:underline">Show Certificate →</a>
+                    </div>
+                </details>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="cta" class="max-w-6xl mx-auto px-6 py-24 border-t border-slate-100">
+        <div class="navy-bg rounded-3xl p-12 text-center text-white">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to discuss your next project?</h2>
+            <p class="text-slate-400 mb-10 max-w-lg mx-auto">Currently open to Data Analyst and Analytics Engineering / Data Analyst roles.</p>
+            <a href="mailto:wichaya.wic@gmail.com" class="inline-block bg-white text-slate-900 px-8 py-4 rounded-xl font-bold hover:bg-blue-50 transition">
+                Send an Email
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 text-center text-slate-400 text-sm">
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="http://www.linkedin.com/in/wichaya-wichienchai" class="hover:text-slate-900">LinkedIn</a>
+            <a href="https://github.com/wiwich" class="hover:text-slate-900">GitHub</a>
+            <!--a href="#" class="hover:text-slate-900">Medium</a-->
+        </div>
+        <p>Wichaya's Portfolio © 2026 </p>
+        <!--p>© 2026 Professional Portfolio. Built with Tailwind CSS.</p-->
+    </footer>
+
+</body>
+</html>
